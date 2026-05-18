@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Proyecto Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contáctanos</h1>
+        <p>Llena el siguiente formulario para enviarnos un mensaje.</p>
+        
+        <form id="formulario-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Ingresa tu correo">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Enviar Mensaje</button>
+            
+            <!-- Contenedor para mostrar mensajes de éxito o error vía DOM -->
+            <div id="mensaje-validacion"></div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto Final de Desarrollo Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
